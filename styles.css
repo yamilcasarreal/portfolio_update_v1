@@ -42,7 +42,7 @@ a:hover {
 }
 .nav {
   display: flex;
-  margin: 100%
+  margin: 100%;
   justify-content: space-around;
   font-weight: 700;
   min-width: 40%;
@@ -72,7 +72,8 @@ a:hover {
 .index-header {
   text-align: center;
   background: url('images/mcmap photo.jpg') no-repeat top right ;
-  background-size: 77%;
+  background-size: auto;
+  /* background-position: right; */
   border-radius: 3.125rem;
   border: solid orange 5px;
   overflow: hidden;
@@ -107,10 +108,13 @@ a:hover {
 
 }
 main {
-  padding-top: 3.125rem;
+  /* padding-top: 3.125rem; */
 
-  margin-top: 20px;
-  background: url("images/secondbackground.jpg") no-repeat top left;
+  /* margin-top: 20px; */
+  background: url("images/backgroundtwo.jpg") repeat scroll center transparent;
+  background-size: auto;
+  background-position: center;
+
   border: solid 5px orange;
   transition: all .5s;
   background-size: 100%
@@ -124,15 +128,26 @@ main:hover {
 }
 h1 {
   color: black;
+  /* margin: auto; */
   /* border-bottom: 5px dotted orange; */
-  margin-left: 20.625rem;
+  /* margin-left: 20.625rem; */
   width: 50%;
+  /* height: 50%; */
   transition: all .5s;
+
   /* marin-right: 250px; */
   /* width: 150px; */
 }
 #MoreAboutMe:hover {
   background-color: orange;
+}
+#MoreAboutMe {
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 30px;
+  margin-top: auto;
+  display: inline-block;
+  /* float: center; */
 }
 h2 {
   border-radius: 6px;
@@ -151,7 +166,7 @@ h2 {
   padding-left: 10px;
   border: solid 5px orange;
   max-width: 31.25rem;
-  max-height: 37.5rem;
+  /* max-height: 37.5rem; */
   transition: all .5s;
   /* height-width: 50%; */
 }
@@ -232,7 +247,7 @@ h5 {
   padding: 20px 40px 40px;
   font-size: 13px;
   max-width: 500px;
-  max-height: 600px;
+  /* max-height: 600px; */
   text-align: left;
   /* background: white */
   border: 4px solid orange;
@@ -249,11 +264,11 @@ h5 {
     padding: 20px 40px 40px;
     padding-top: 0;
     /* max-width: 100000px; */
-    max-height: 500px;
+    /* max-height: 500px; */
     text-align: left;
     /* background: #fff; */
     border: 4px solid orange;
-    float: left;
+    /* float: left; */
     border-radius: 6px;
     transition: all .5s;
 
@@ -267,7 +282,7 @@ h5 {
     padding: 20px 40px 40px;
 
 
-    max-height: 500px;
+    /* max-height: 500px; */
     text-align: left;
     /* background:; */
     border: 4px solid orange;
