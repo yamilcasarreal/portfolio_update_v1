@@ -2,18 +2,26 @@
 * {
   /* font-family: "Comic Sans MS"; */
   box-sizing: border-box;
-}
 
+}
+.wrap {
+  margin: 0 auto;
+
+}
 body {
+  /* position: absolute; */
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
   background: #f7f5f0;
+  /* width= 100% */
+  /* min-height: 1160px; */
 }
 /* Link Styles */
-
 a {
   text-decoration: none;
   color: #999;
@@ -23,19 +31,21 @@ a:hover {
 }
 
 /* Section Styles */
-
 .main-nav {
   width: 100%;
   background: orange;
   min-height: 1.875rem;
   padding: 1.6rem;
+  min-width: 40%;
   position: fixed;
   text-align: center;
 }
 .nav {
   display: flex;
+  margin: 100%
   justify-content: space-around;
   font-weight: 700;
+  min-width: 40%;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -63,7 +73,7 @@ a:hover {
   text-align: center;
   background: url('images/mcmap photo.jpg') no-repeat top right ;
   background-size: 77%;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 3.125rem;
   border: solid orange 5px;
   overflow: hidden;
   padding-top: 90px;
@@ -84,7 +94,7 @@ a:hover {
   line-height: 1.5;
 }
 .index-header .profile-image {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   width: 9.375rem;
   height: 9.375rem;
   border-radius: 80%;
@@ -97,7 +107,7 @@ a:hover {
 
 }
 main {
-  padding-top: 50px;
+  padding-top: 3.125rem;
 
   margin-top: 20px;
   background: url("images/secondbackground.jpg") no-repeat top left;
@@ -115,7 +125,7 @@ main:hover {
 h1 {
   color: black;
   /* border-bottom: 5px dotted orange; */
-  margin-left: 330px;
+  margin-left: 20.625rem;
   width: 50%;
   transition: all .5s;
   /* marin-right: 250px; */
@@ -135,17 +145,19 @@ h2 {
   margin: 5px;
 
 }
-.mystory {
+.mystory{
   margin-left: 30px;
-  flex: 0 0 65%;
+  /* flex: 0 0 65%; */
+  padding-left: 10px;
   border: solid 5px orange;
-  max-width: 500px;
-  max-height: 600px;
+  max-width: 31.25rem;
+  max-height: 37.5rem;
   transition: all .5s;
   /* height-width: 50%; */
 }
 .otherthanprogramming {
   padding-right: 10px;
+  padding-left: 10px;
   flex: 4;
   border: solid 5px orange;
   margin-left: 150px;
@@ -153,7 +165,7 @@ h2 {
   margin-bottom: 200px;
   /* padding-bottom: 500px; */
   /* margin-bottom: 500px; */
-  max-width: 800px;
+  max-width: 50rem;
   /* max-height: 700px; */
   transition: all .5s;
 }
@@ -167,13 +179,13 @@ h4{
   text-align: center;
   font-size: 30px;
   /* border-bottom: solid black 4px; */
-  width: 40%;
+  min-width: 40%;
 }
 h5 {
   text-align: center;
   font-size: 30px;
   /* border-bottom: solid black 4px; */
-  width: 80%;
+  min-width: 80%;
 }
 #h4h5 {
   background-color: orange;
@@ -181,7 +193,6 @@ h5 {
 .mystory p, .otherthanprogramming p {
   text-align: left;
   font-family: "Comic Sans MS";
-  font-weight: 450
 }
 
 .mybackground p, .card p, .hobbys p {
@@ -233,6 +244,7 @@ h5 {
   border-color: black;
 }
 .mybackground {
+
     margin: 10px;
     padding: 20px 40px 40px;
     padding-top: 0;
@@ -241,6 +253,7 @@ h5 {
     text-align: left;
     /* background: #fff; */
     border: 4px solid orange;
+    float: left;
     border-radius: 6px;
     transition: all .5s;
 
@@ -253,7 +266,7 @@ h5 {
     margin: 10px;
     padding: 20px 40px 40px;
 
-    max-width: 100000px;
+
     max-height: 500px;
     text-align: left;
     /* background:; */
@@ -348,17 +361,16 @@ a.social:hover {
 .clearfix {
   clear: both;
 }
-#photos {
+.photos {
   /* border: 5px Ridge black; */
   margin-top: 50px;
-  align: left;
   width: 150px;
   height: 150px;
   transition: all .5s;
   border: 5px solid black;
   border-radius: 25px 25px 25px 25px;
 }
-#photos:hover {
+.photos:hover {
   transform: scale(2.2);
   border: 3px solid orange;
 }
